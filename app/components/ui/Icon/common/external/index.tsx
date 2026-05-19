@@ -6,7 +6,7 @@ const external = {
   viewBox: "0 0 30 30",
   svg: (fill: string, stroke: string, title: string) => (
     <>
-      {title && <title> {title} </title>}
+      {title && <title>{title}</title>}
       <path
         fill={fill}
         stroke={stroke}

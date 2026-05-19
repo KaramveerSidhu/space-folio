@@ -1,0 +1,148 @@
+@import "@base";
+
+.timeline {
+  padding: $section-padding;
+  color: $primary-color;
+  width: 100%;
+}
+
+.heading {
+  @include section-heading;
+}
+
+.items {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.items::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: $space;
+}
+
+.item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  column-gap: 24px;
+  margin-bottom: 28px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid $green;
+  background: $primary-bg-color;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.itemContent {
+  @include card;
+  margin-bottom: 0;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  opacity: $text-opacity;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.organization {
+  color: $green;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.location {
+  opacity: $text-opacity;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.highlights {
+  opacity: $text-opacity;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: $breakpoint-primary) {
+  .timeline {
+    padding: $section-padding-alt;
+  }
+
+  .heading {
+    @include section-heading-secondary;
+  }
+
+  .item {
+    column-gap: 16px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .organization {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-secondary) {
+  .items::before {
+    display: none;
+  }
+
+  .item {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .marker {
+    display: none;
+  }
+
+  .itemContent {
+    padding: 18px;
+  }
+
+  .meta,
+  .location,
+  .highlights {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tertiary) {
+  .timeline {
+    padding: 12px;
+  }
+}
