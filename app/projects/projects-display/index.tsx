@@ -4,6 +4,7 @@ import { marked } from "marked";
 import parseHTML from "html-react-parser";
 import Icon from "@/app/components/ui/Icon";
 import Link from "next/link";
+import clsx from "clsx";
 
 type projectType = {
   id: string;
@@ -30,6 +31,8 @@ const ProjectsDisplay = (props: propTypes) => {
           ? parseHTML(marked.parse(project.content))
           : "";
         const projectLink = project.appURL || project.sourceCodeURL;
+        const isSvg = project.imgURL.endsWith(".svg");
+        const isTokenbooks = project.id === "tokenbooks";
 
         return (
           <div key={project.id} className={styles.project}>
@@ -66,17 +69,32 @@ const ProjectsDisplay = (props: propTypes) => {
                 </div>
               </div>
 
-              <div className={styles.projectImg}>
+              <div
+                className={clsx(
+                  styles.projectImg,
+                  isTokenbooks && styles.tokenbooksImg
+                )}
+              >
                 {projectLink ? (
                   <Link
                     href={projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image src={project.imgURL} fill alt={project.imgURL} />
+                    <Image
+                      src={project.imgURL}
+                      fill
+                      alt={project.imgURL}
+                      unoptimized={isSvg}
+                    />
                   </Link>
                 ) : (
-                  <Image src={project.imgURL} fill alt={project.imgURL} />
+                  <Image
+                    src={project.imgURL}
+                    fill
+                    alt={project.imgURL}
+                    unoptimized={isSvg}
+                  />
                 )}
               </div>
             </div>

@@ -6,7 +6,7 @@ const github = {
   fill: "#FFFFFF",
   svg: (fill: string, _: string, title: string) => (
     <>
-      {title && <title> {title} </title>}
+      {title && <title>{title}</title>}
       <path
         fill={fill}
         width="100%"

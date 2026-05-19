@@ -1,0 +1,87 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+    <pattern id="server-grid" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 12 0 L 0 0 0 12" stroke="#D7E7F3" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="560" rx="18" fill="#F8FAFC"/>
+  <rect x="32" y="32" width="836" height="496" rx="16" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+
+  <text x="450" y="72" text-anchor="middle" fill="#256FA6" font-family="Arial, sans-serif" font-size="30" font-weight="700">Federated IDS Learning</text>
+  <text x="450" y="204" text-anchor="middle" fill="#256FA6" font-family="Arial, sans-serif" font-size="28" font-weight="700">Central Server</text>
+
+  <path d="M224 145L390 250" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="9 12" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path d="M676 145L510 250" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="9 12" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path d="M224 415L390 305" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="9 12" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path d="M676 415L510 305" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="9 12" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+
+  <rect x="388" y="230" width="124" height="104" rx="6" fill="url(#server-grid)" stroke="#111827" stroke-width="3"/>
+  <path d="M421 293C411 293 403 285 403 275C403 265 411 257 421 257C424 244 435 235 449 235C462 235 473 243 477 256C490 257 500 267 500 280C500 292 490 302 478 302H421C421 302 421 293 421 293Z" fill="#CFE8F8" stroke="#111827" stroke-width="3" stroke-linejoin="round"/>
+
+  <g transform="translate(146 90)">
+    <rect x="0" y="0" width="78" height="106" rx="3" fill="#FFFFFF" stroke="#111827" stroke-width="3"/>
+    <rect x="13" y="18" width="52" height="28" fill="#F8FAFC" stroke="#111827" stroke-width="2"/>
+    <path d="M14 58H61M14 68H58M14 78H43" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+    <rect x="48" y="69" width="17" height="17" fill="#F7D66C" stroke="#111827" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(676 90)">
+    <rect x="0" y="0" width="78" height="106" rx="3" fill="#FFFFFF" stroke="#111827" stroke-width="3"/>
+    <rect x="13" y="18" width="52" height="28" fill="#F8FAFC" stroke="#111827" stroke-width="2"/>
+    <path d="M14 58H61M14 68H58M14 78H43" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+    <rect x="48" y="69" width="17" height="17" fill="#F7D66C" stroke="#111827" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(146 365)">
+    <rect x="0" y="0" width="78" height="106" rx="3" fill="#FFFFFF" stroke="#111827" stroke-width="3"/>
+    <rect x="13" y="18" width="52" height="28" fill="#F8FAFC" stroke="#111827" stroke-width="2"/>
+    <path d="M14 58H61M14 68H58M14 78H43" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+    <rect x="48" y="69" width="17" height="17" fill="#F7D66C" stroke="#111827" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(676 365)">
+    <rect x="0" y="0" width="78" height="106" rx="3" fill="#FFFFFF" stroke="#111827" stroke-width="3"/>
+    <rect x="13" y="18" width="52" height="28" fill="#F8FAFC" stroke="#111827" stroke-width="2"/>
+    <path d="M14 58H61M14 68H58M14 78H43" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+    <rect x="48" y="69" width="17" height="17" fill="#F7D66C" stroke="#111827" stroke-width="1.5"/>
+  </g>
+
+  <g transform="translate(298 103)">
+    <circle cx="0" cy="0" r="34" fill="#E7F4FB" stroke="#2F80B7" stroke-width="3"/>
+    <path d="M-12-6H12M-12 6H12M0-18V18M-18 0H18" stroke="#2F80B7" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-12" cy="-6" r="3" fill="#2F80B7"/>
+    <circle cx="12" cy="6" r="3" fill="#2F80B7"/>
+    <text x="0" y="55" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="700">Global Model</text>
+  </g>
+  <g transform="translate(602 103)">
+    <circle cx="0" cy="0" r="34" fill="#E7F4FB" stroke="#2F80B7" stroke-width="3"/>
+    <path d="M-12-6H12M-12 6H12M0-18V18M-18 0H18" stroke="#2F80B7" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-12" cy="-6" r="3" fill="#2F80B7"/>
+    <circle cx="12" cy="6" r="3" fill="#2F80B7"/>
+    <text x="0" y="55" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="700">Global Model</text>
+  </g>
+  <g transform="translate(298 395)">
+    <circle cx="0" cy="0" r="34" fill="#EAF7EE" stroke="#4CAF6A" stroke-width="3"/>
+    <path d="M-12-6H12M-12 6H12M0-18V18M-18 0H18" stroke="#4CAF6A" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-12" cy="-6" r="3" fill="#4CAF6A"/>
+    <circle cx="12" cy="6" r="3" fill="#4CAF6A"/>
+    <text x="0" y="55" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="700">Updated Model</text>
+  </g>
+  <g transform="translate(602 395)">
+    <circle cx="0" cy="0" r="34" fill="#EAF7EE" stroke="#4CAF6A" stroke-width="3"/>
+    <path d="M-12-6H12M-12 6H12M0-18V18M-18 0H18" stroke="#4CAF6A" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-12" cy="-6" r="3" fill="#4CAF6A"/>
+    <circle cx="12" cy="6" r="3" fill="#4CAF6A"/>
+    <text x="0" y="55" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="700">Updated Model</text>
+  </g>
+
+  <text x="91" y="133" text-anchor="middle" fill="#C6922C" font-family="Arial, sans-serif" font-size="20" font-weight="700">local</text>
+  <text x="91" y="157" text-anchor="middle" fill="#C6922C" font-family="Arial, sans-serif" font-size="20" font-weight="700">training</text>
+  <text x="809" y="133" text-anchor="middle" fill="#C6922C" font-family="Arial, sans-serif" font-size="20" font-weight="700">local</text>
+  <text x="809" y="157" text-anchor="middle" fill="#C6922C" font-family="Arial, sans-serif" font-size="20" font-weight="700">training</text>
+  <text x="91" y="408" text-anchor="middle" fill="#C6922C" font-family="Arial, sans-serif" font-size="20" font-weight="700">local</text>
+  <text x="91" y="432" text-anchor="middle" fill="#C6922C" font-family="Arial, sans-serif" font-size="20" font-weight="700">training</text>
+  <text x="809" y="408" text-anchor="middle" fill="#C6922C" font-family="Arial, sans-serif" font-size="20" font-weight="700">local</text>
+  <text x="809" y="432" text-anchor="middle" fill="#C6922C" font-family="Arial, sans-serif" font-size="20" font-weight="700">training</text>
+</svg>

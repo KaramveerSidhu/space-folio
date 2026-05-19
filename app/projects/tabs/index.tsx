@@ -17,7 +17,7 @@ const Tabs = (props: propTypes) => {
         className={clsx(styles.tab, !isPersonalActive && styles.active)}
         onClick={() => onChange("contributed")}
       >
-        Projects I contributed to
+        Projects Contributed To
       </div>
       <div> | </div>
       <div

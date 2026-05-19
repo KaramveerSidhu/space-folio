@@ -20,6 +20,19 @@
   object-fit: contain;
 }
 
+.tokenbooksImg {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 4px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.tokenbooksImg img {
+  transform: scale(0.72);
+  transform-origin: center;
+}
+
 .projectDetailsContainer {
   display: flex;
   width: 100%;
@@ -86,5 +99,9 @@
 
   .projectImg {
     height: 150px;
+  }
+
+  .tokenbooksImg img {
+    transform: scale(0.64);
   }
 }
