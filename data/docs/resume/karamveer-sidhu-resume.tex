@@ -1,0 +1,101 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.43in]{geometry}
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{textgray}{HTML}{333333}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.96}
+\raggedright
+\color{textgray}
+
+\newcommand{\sectiontitle}[1]{%
+  \vspace{6pt}
+  {\large\bfseries\color{accent}#1}
+  \vspace{2pt}
+  \hrule height 0.5pt
+  \vspace{4pt}
+}
+
+\newcommand{\roleentry}[4]{%
+  \textbf{#1} \hfill {\small #2}\\
+  \textit{#3} \hfill {\small \textit{#4}}
+}
+
+\newcommand{\projectentry}[3]{%
+  \textbf{#1} \hfill {\small #2}\\
+  {\small #3}
+}
+
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=1pt, parsep=0pt, partopsep=0pt}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Karamveer Singh Sidhu}}\\[-1pt]
+  {\normalsize Deep Learning Researcher \textbar{} Full-Stack Software Engineer}\\[2pt]
+  \href{mailto:karamveersidhu14@gmail.com}{karamveersidhu14@gmail.com}
+  \textbar{} Prince George, BC, Canada
+  \textbar{} \href{https://karamveersidhu.com}{karamveersidhu.com}
+  \textbar{} \href{https://www.linkedin.com/in/karamveersidhu/}{LinkedIn}
+  \textbar{} \href{https://github.com/KaramveerSidhu}{GitHub}
+\end{center}
+
+\sectiontitle{Skills}
+\textbf{Languages:} TypeScript, JavaScript, Python, C++, Rust, SQL \\
+\textbf{Frontend/Backend:} React.js, Next.js, Node.js, NestJS, REST APIs, BullMQ, OAuth, Web3, Design Systems \\
+\textbf{ML/Data/Infra:} PyTorch, Flower, Federated Learning, R, Jupyter, PostgreSQL, MongoDB, Redis, Docker, AWS
+
+\sectiontitle{Experience}
+\roleentry{Tokenbooks}{June 2025 -- Present}{Software Engineer}{Vancouver, BC}
+\begin{itemize}
+  \item Build full-stack Web3 finance features across wallet/exchange sync, accounting workflows, reporting, and payments.
+  \item Shipped payment request intake, approval routing, counterparty/payment details, and crypto-to-fiat payout flows.
+  \item Improved multi-wallet, multi-chain ingestion reliability through async job orchestration, status tracking, structured error handling, Coinbase OAuth reconnect flows, and Excel/XLSX exports.
+\end{itemize}
+
+\roleentry{University of Northern British Columbia}{Sept. 2024 -- June 2025}{Graduate Teaching Assistant}{Prince George, BC}
+\begin{itemize}
+  \item Designed and delivered labs for 110+ students covering statistics and visualization with R and R Commander.
+  \item Developed Jupyter/Python labs, taught statistical modeling concepts, provided student support, and assisted with grading and exam invigilation.
+\end{itemize}
+
+\roleentry{CloudSEK}{July 2022 -- Aug. 2024}{Software Development Engineer}{Bangalore, India}
+\begin{itemize}
+  \item Built data visualization components, dashboards, and user-facing pages for XVigil and SVigil; contributed to in-house design system components.
+  \item Implemented chunked APK uploads, reducing upload time by 40--50\% while bypassing file size limits.
+  \item Developed Exposure Search with other engineers, contributing to 100k+ searches and 3000+ leads; independently shipped a new product frontend within two weeks, supporting a \$100k deal.
+\end{itemize}
+
+\sectiontitle{Research \& Projects}
+\projectentry{MSc Thesis Research: Causal FL-IDS Defense}{\href{https://github.com/KaramveerSidhu/causal-fl-ids-defense}{GitHub}}{Federated learning robustness for intrusion detection systems}
+\begin{itemize}
+  \item Designed a causal-defense CNN with a learnable sparse 64x64 causal matrix, aggregated across clients with FedAvg.
+  \item Built a reproducible UM-NIDS pipeline and evaluated a 4-client non-IID PyTorch/Flower setup under FGSM and PGD attacks.
+  \item Improved PGD robustness from 41.0\% to 89.85\% at epsilon = 0.20 with under 1\% clean-accuracy loss, without adversarial training.
+\end{itemize}
+
+\sectiontitle{Education}
+\textbf{University of Northern British Columbia} \hfill {\small Sept. 2024 -- June 2026}\\
+MSc, Computer Science \hfill {\small GPA: 4.08}\\[2pt]
+\textbf{Baba Banda Singh Bahadur Engineering College} \hfill {\small 2018 -- 2022}\\
+BTech, Computer Science \hfill {\small CGPA: 8.86}
+
+\sectiontitle{Publications}
+\begin{itemize}
+  \item \textbf{\href{https://arxiv.org/abs/2601.10004}{SoK: Privacy-aware LLM in Healthcare: Threat Model, Privacy Techniques, Challenges and Recommendations}}. arXiv preprint, 2026.
+  \item \textbf{\href{https://doi.org/10.36953/ECJ.2021.SE.2202}{Data science and analytics in agricultural development}}. Environment Conservation Journal, 2021.
+  \item \textbf{\href{https://doi.org/10.36953/ECJ.2021.SE.2206}{Advancements in farming and related activities with the help of artificial intelligence: a review}}. Environment Conservation Journal, 2021.
+\end{itemize}
+
+\end{document}
